@@ -59,26 +59,41 @@ main {
  */
 .main-nav ul {
 	margin: 1em 0 .5em;
-	text-align: center;
+	text-align: right;
 }
 .main-nav li {
-	display: inline;
+    display: inline; 
 }
 .main-nav a {
 	display: inline-block;
 	padding: .5em 1.5em;
 }
 
-/*set horizontal button menu*/
+li.btn {width:115px; line-height:2; margin-bottom:3px; margin-right:5px; text-align:center;}
+
+li.btn a {display:inline-block; width:115px; color:white; font-family:arial; font-size:100%; font-weight:bold; text-decoration:none;}
+
+li.btn a {background: #1A9CE0; border:4px outset #AABAFF;}
+
+li.btn a:hover	{background:#0A4ADF; border:4px outset #8ABAFF;}
+
+li.btn a:active {background:#AECBFF; border:4px inset #AECBFF;}
+
+
+/*set horizontal button menu
 .main-nav ul {float:left; width:1000px; height:40px; margin-left:100px; text-align:center; padding-left:0;  list-style-type:none;}
-/*set general horizontal menu button styles*/
+/*set general horizontal menu button styles
 .main-nav ul li { display:inline-block;}
 li.btn {width:115px; line-height:2; margin-bottom:3px; margin-right:5px; text-align:center;}
-/* set general access (anchor) styles */
+/* set general access (anchor) styles 
 li.btn a {display:inline-block; width:115px; color:white; font-family:arial; font-size:100%; font-weight:bold; text-decoration:none;}
-/* mouseout (default) */
+/* mouseout (default) 
 li.btn a {background: #1A9CE0; border:4px outset #AABAFF;}
-/* mouseover */
+/* mouseover 
 li.btn a:hover	{background:#0A4ADF; border:4px outset #8ABAFF;}
-/* mousedown */
+/* mousedown 
 li.btn a:active {background:#AECBFF; border:4px inset #AECBFF;}
+
+
+
+
