@@ -42,7 +42,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'You wake up in a strange place and you see a jar of blue goo near you.',
+    text: 'You wake up in Dalkeith and you wonder where you are.  You b',
     options: [
       {
         text: 'Take the goo',
