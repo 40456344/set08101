@@ -44,6 +44,7 @@ main {
 .sidebar {
     flex: 0 1 300px;
 }
+
 .main-header .container {
 	display: flex;
 	align-items: center;
