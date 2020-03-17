@@ -1,0 +1,121 @@
+main, header, section, aside, footer {
+    margin: 0;
+    padding: rem-calc(20);
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+main {
+    background: #000000;
+    padding: 1em;
+}
+
+.header {
+    background: #03a9f4;
+}
+
+.hero {
+    background: #d22b1f;
+}
+
+.content { 
+    background: #129a22;
+    width: 100 px;
+    height: 100 px;
+    margin-top: 10 px;
+    line-height: 150 px;
+    color: white ;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+.sidebar {
+    border: 1px solid #000000;
+    background: #673ab7;
+}
+
+.footer {
+    border: 1px solid #000000;
+    background: #616161;
+}
+
+@media screen and (min-width: 640px){
+    .flex-container {
+        display: flex;
+    }    
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 20%;
+    }
+    
+
+
+
+.content {
+    flex: 1;
+}
+
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    width: 50%;
+}
+
+/**
+ * The followings are to
+ * make things more
+ * clean and airy
+ * and contents centered
+ */
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: right;
+}
+.main-nav li {
+    display: inline; 
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+
+li.btn {width:115px; line-height:2; margin-bottom:3px; margin-right:5px; text-align:center;}
+
+li.btn a {display:inline-block; width:115px; color:white; font-family:arial; font-size:100%; font-weight:bold; text-decoration:none;}
+
+li.btn a {background: #1A9CE0; border:4px outset #AABAFF;}
+
+li.btn a:hover	{background:#0A4ADF; border:4px outset #8ABAFF;}
+
+li.btn a:active {background:#AECBFF; border:4px inset #AECBFF;}
+
+
+/*set horizontal button menu
+.main-nav ul {float:left; width:1000px; height:40px; margin-left:100px; text-align:center; padding-left:0;  list-style-type:none;}
+/*set general horizontal menu button styles
+.main-nav ul li { display:inline-block;}
+li.btn {width:115px; line-height:2; margin-bottom:3px; margin-right:5px; text-align:center;}
+/* set general access (anchor) styles 
+li.btn a {display:inline-block; width:115px; color:white; font-family:arial; font-size:100%; font-weight:bold; text-decoration:none;}
+/* mouseout (default) 
+li.btn a {background: #1A9CE0; border:4px outset #AABAFF;}
+/* mouseover 
+li.btn a:hover	{background:#0A4ADF; border:4px outset #8ABAFF;}
+/* mousedown 
+li.btn a:active {background:#AECBFF; border:4px inset #AECBFF;}
+
+
+
+
