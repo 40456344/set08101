@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "title": "IoT Design Class Example",
+    "owner": "Paul Hughes"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "IoT Design",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
