@@ -57,7 +57,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Water Sensor"
+                  "text": "Water Level Sensor"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -71,8 +71,8 @@
                 "height": 80
               },
               "position": {
-                "x": 531,
-                "y": 497
+                "x": 316,
+                "y": 492
               },
               "angle": 0,
               "id": "9762e7bc-2cc9-48c2-8197-8215bfe6a527",
@@ -97,8 +97,8 @@
                 "height": 80
               },
               "position": {
-                "x": 295,
-                "y": 500
+                "x": 430,
+                "y": 180
               },
               "angle": 0,
               "id": "2633e77a-270e-4678-98b9-860fb8b89320",
@@ -115,12 +115,197 @@
                   "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 211,
+                "y": 295
+              },
+              "angle": 0,
+              "id": "b2177b75-f842-43df-9682-19f6a55ac37a",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Raspberry Pi"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 506,
+                "y": 297
+              },
+              "angle": 0,
+              "id": "03ee795e-bb33-4004-a8ea-a7ada730b6db",
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Water sensors Control"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 110,
+                "y": 492
+              },
+              "target": {
+                "x": 210,
+                "y": 348
+              },
+              "vertices": [
+                {
+                  "x": 110,
+                  "y": 458
+                },
+                {
+                  "x": 122,
+                  "y": 395
+                }
+              ],
+              "id": "6de798e2-56a4-4976-9dc5-15cd02e4c871",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.438229413250072,
+                    "offset": -33.79150891301223
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Data A1",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "9762e7bc-2cc9-48c2-8197-8215bfe6a527"
+              },
+              "target": {
+                "x": 313,
+                "y": 340
+              },
+              "vertices": [
+                {
+                  "x": 393,
+                  "y": 430
+                },
+                {
+                  "x": 390,
+                  "y": 385
+                },
+                {
+                  "x": 368,
+                  "y": 355
+                }
+              ],
+              "id": "6201489f-963b-48a9-b9f5-1800d90df7e2",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Data A2",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 123,
+                "y": 282
+              },
+              "target": {
+                "x": 333,
+                "y": 222
+              },
+              "vertices": [
+                {
+                  "x": 75,
+                  "y": 232
+                },
+                {
+                  "x": 88,
+                  "y": 225
+                }
+              ],
+              "id": "c29739f6-1986-428c-8bf2-62d1eb6bb094",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 8",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "attrs": {}
             }
           ]
         },
         "size": {
           "height": 590,
-          "width": 1788
+          "width": 2199
         }
       }
     ]
