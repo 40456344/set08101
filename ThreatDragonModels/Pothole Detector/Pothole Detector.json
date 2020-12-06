@@ -231,7 +231,7 @@
               "angle": 0,
               "id": "eef80517-fec4-456c-a663-f39407c32695",
               "z": 7,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "status": "Mitigated",
@@ -242,7 +242,7 @@
                   "mitigation": "Use VPN tunnel"
                 },
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Tampering",
                   "title": "Access to Wifi Router",
@@ -252,13 +252,13 @@
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Internet Gateway"
+                  "text": "Mobile / Internet\nGateway"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -318,6 +318,10 @@
                 {
                   "x": 539,
                   "y": 206
+                },
+                {
+                  "x": 556,
+                  "y": 232
                 }
               ],
               "id": "87a366ed-7197-4577-bb91-f33b03cdb10d",
@@ -338,6 +342,336 @@
               ],
               "z": 10,
               "hasOpenThreats": false,
+              "protocol": "CoAP",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 677,
+                "y": 390
+              },
+              "angle": 0,
+              "id": "9479a219-9be9-4316-a598-011585a46a88",
+              "z": 11,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Bribed Manager access to Google Cloud",
+                  "type": "Elevation of privilege",
+                  "description": "Someone could give access details to the Google Cloud Platform which would give a user access to all systems, accessing all data and changing applications",
+                  "mitigation": "Users of Systems are security vetted to ensure a level of trust from staff"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Hackers could guess username and password for Google Cloud Platform",
+                  "type": "Elevation of privilege",
+                  "description": "Hackers could try different user names and passwords to gain access to google cloud platform",
+                  "mitigation": "Ensure strong passwords are used.\nSetup two factor authentication"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Google Cloud Platform"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 622,
+                "y": 329
+              },
+              "target": {
+                "x": 677,
+                "y": 389
+              },
+              "vertices": [
+                {
+                  "x": 671,
+                  "y": 382
+                }
+              ],
+              "id": "638651ba-f3ea-4cca-b617-17b73516ae12",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "hasOpenThreats": false,
+              "protocol": "CoAP",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 1229,
+                "y": 41
+              },
+              "target": {
+                "x": 1001,
+                "y": 626
+              },
+              "vertices": [
+                {
+                  "x": 1271,
+                  "y": 334
+                },
+                {
+                  "x": 1239,
+                  "y": 516
+                }
+              ],
+              "id": "d9419a07-04c5-4626-a275-389b7717ada9",
+              "z": 13,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 892,
+                "y": 177
+              },
+              "angle": 0,
+              "id": "98bd63ee-1ec4-4a6a-9e4c-a0af989a0c02",
+              "z": 14,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "Staff directly gaining access to database and modifying database records",
+                  "title": "Staff accessing and modifying database records",
+                  "mitigation": "Ensure staff are securely vetted."
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "SQL Database"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 792,
+                "y": 389
+              },
+              "target": {
+                "id": "98bd63ee-1ec4-4a6a-9e4c-a0af989a0c02"
+              },
+              "vertices": [],
+              "id": "479492e0-05d0-4512-b948-74ea2a1a86f0",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 874,
+                "y": 490
+              },
+              "angle": 0,
+              "id": "2f587d4d-80f5-4e15-bb8d-4902863646df",
+              "z": 16,
+              "hasOpenThreats": false,
+              "isALog": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Logs"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 794,
+                "y": 472
+              },
+              "target": {
+                "x": 871,
+                "y": 537
+              },
+              "vertices": [
+                {
+                  "x": 836,
+                  "y": 514
+                }
+              ],
+              "id": "6c5f7beb-ac78-45b5-a434-85f4f2fa2158",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 17,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 1345,
+                "y": 328
+              },
+              "angle": 0,
+              "id": "5b4cc47c-c216-4cf8-acbe-10de6017cfaa",
+              "z": 18,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Impersonates Manager and access Data Studio",
+                  "type": "Spoofing",
+                  "description": "Impersonates Manager and access Data Studio",
+                  "mitigation": "Two factor Authentication is setup."
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Google Studio"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "9479a219-9be9-4316-a598-011585a46a88"
+              },
+              "target": {
+                "x": 1336,
+                "y": 371
+              },
+              "vertices": [
+                {
+                  "x": 1102,
+                  "y": 397
+                }
+              ],
+              "id": "48cdca74-35b4-4a05-af44-787b770cf1a4",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 19,
+              "hasOpenThreats": false,
+              "protocol": "CoAP",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -351,7 +685,7 @@
         },
         "size": {
           "height": 2043.627197265625,
-          "width": 790
+          "width": 1535
         }
       }
     ]
