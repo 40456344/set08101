@@ -490,7 +490,7 @@
               "angle": 0,
               "id": "98bd63ee-1ec4-4a6a-9e4c-a0af989a0c02",
               "z": 14,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "status": "Mitigated",
@@ -499,17 +499,25 @@
                   "description": "Staff directly gaining access to database and modifying database records",
                   "title": "Staff accessing and modifying database records",
                   "mitigation": "Ensure staff are securely vetted."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "title": "An attacker gains access to the database to view data",
+                  "description": "An attacker gains access to the sql database",
+                  "mitigation": "Two Factor authentication\nStrong Passwords for Database\nUser Account access"
                 }
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "SQL Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -657,7 +665,7 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "9479a219-9be9-4316-a598-011585a46a88"
+                "id": "98bd63ee-1ec4-4a6a-9e4c-a0af989a0c02"
               },
               "target": {
                 "x": 1336,
