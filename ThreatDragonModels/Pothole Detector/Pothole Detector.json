@@ -92,13 +92,31 @@
                 "height": 100
               },
               "position": {
-                "x": 347,
-                "y": 154
+                "x": 350,
+                "y": 151
               },
               "angle": 0,
               "id": "5404c7ea-ac09-449f-a924-65a0c21f74b2",
               "z": 3,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Physical access to USB on Particle device",
+                  "type": "Tampering",
+                  "description": "Someone could physically attach a USB to the particle device and modify the filmware.",
+                  "mitigation": "Disable USB on the Particle device."
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "title": "Using a known exploit on the Particle firmware of an unpatched system",
+                  "description": "Using a known exploit on the Particle firmware of an unpatched system",
+                  "mitigation": "Ensure particle device is patched with the latest stable filmware"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -142,6 +160,7 @@
               ],
               "z": 4,
               "hasOpenThreats": false,
+              "protocol": "Standard NMEA",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -165,12 +184,19 @@
                 {
                   "x": 279,
                   "y": 277
+                },
+                {
+                  "x": 318,
+                  "y": 256
                 }
               ],
               "id": "53d96e22-ae82-441a-9200-7f73659618df",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.7883179835591243,
+                    "offset": 23.890798533182604
+                  },
                   "attrs": {
                     "text": {
                       "text": "Accelerometer data",
@@ -181,6 +207,136 @@
                 }
               ],
               "z": 5,
+              "hasOpenThreats": false,
+              "protocol": "I2C",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 461,
+                "y": 286
+              },
+              "angle": 0,
+              "id": "eef80517-fec4-456c-a663-f39407c32695",
+              "z": 7,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Man in the middle attack on Wifi Gateway",
+                  "type": "Tampering",
+                  "description": "A user could perform a man in the middle attack on the Wifi",
+                  "mitigation": "Use VPN tunnel"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "title": "Access to Wifi Router",
+                  "description": "An attacker could gain access to Wifi Router and making the internet unavailable.",
+                  "mitigation": "Strong Administrator passwords setup on the router"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Internet Gateway"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 23,
+                "y": 368
+              },
+              "target": {
+                "x": 528,
+                "y": 3
+              },
+              "vertices": [
+                {
+                  "x": 391,
+                  "y": 328
+                }
+              ],
+              "id": "019ee279-bd5a-4c85-b90b-3d1dccd1d256",
+              "z": 8,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 346,
+                "y": 546
+              },
+              "target": {
+                "x": 722,
+                "y": 14
+              },
+              "vertices": [
+                {
+                  "x": 639,
+                  "y": 384
+                }
+              ],
+              "id": "635d97c0-cdd0-4c91-b1ec-19549fb39568",
+              "z": 9,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5404c7ea-ac09-449f-a924-65a0c21f74b2"
+              },
+              "target": {
+                "x": 557,
+                "y": 283
+              },
+              "vertices": [
+                {
+                  "x": 539,
+                  "y": 206
+                }
+              ],
+              "id": "87a366ed-7197-4577-bb91-f33b03cdb10d",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5293013303923632,
+                    "offset": -39.47272035298859
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Data Flow",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
@@ -194,7 +350,7 @@
           ]
         },
         "size": {
-          "height": 590,
+          "height": 2043.627197265625,
           "width": 790
         }
       }
