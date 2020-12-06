@@ -10,7 +10,193 @@
       {
         "title": "Pothole Detector",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 50,
+                "y": 55
+              },
+              "angle": 0,
+              "id": "fd4e7285-974e-46b9-ab24-51c9acb321d6",
+              "z": 1,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "title": "Physically removing sensor",
+                  "description": "It is possible to disconnect the GPS from the Particle Device",
+                  "mitigation": "Ensure that GPS sensor is secure and within an area in the car that is not easily accessible.   \nTampering one with sensor will only result in data not being transferred.  Also with all cars on the road with sensors, loss of this data from one device is miniscule."
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "GPS Sensor"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 53,
+                "y": 240
+              },
+              "angle": 0,
+              "id": "546cb154-6f6e-4e7a-a857-a66134e75e56",
+              "z": 2,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Physically removing sensor",
+                  "type": "Tampering",
+                  "description": "The accelerometer sensor could be physically removed from the car.",
+                  "mitigation": "Ensure the accelerometer sensor is secure with the car and not easily accessible.  \n\nTampering one with sensor will only result in data not being transferred, there will be more than one sensor on each car.  Also with all cars on the road with sensors, loss of this data from one device is miniscule."
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Accelerometer"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 347,
+                "y": 154
+              },
+              "angle": 0,
+              "id": "5404c7ea-ac09-449f-a924-65a0c21f74b2",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Particle Argon"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "fd4e7285-974e-46b9-ab24-51c9acb321d6"
+              },
+              "target": {
+                "x": 362,
+                "y": 156
+              },
+              "vertices": [
+                {
+                  "x": 292,
+                  "y": 122
+                }
+              ],
+              "id": "80275cb6-7dd4-4db2-a334-35ea3f0ee7c8",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "GPS Data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "546cb154-6f6e-4e7a-a857-a66134e75e56"
+              },
+              "target": {
+                "x": 344,
+                "y": 237
+              },
+              "vertices": [
+                {
+                  "x": 279,
+                  "y": 277
+                }
+              ],
+              "id": "53d96e22-ae82-441a-9200-7f73659618df",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Accelerometer data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
       }
     ]
   }
