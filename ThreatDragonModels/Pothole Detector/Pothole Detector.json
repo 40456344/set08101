@@ -20,8 +20,8 @@
                 "height": 80
               },
               "position": {
-                "x": 50,
-                "y": 55
+                "x": 33,
+                "y": 108
               },
               "angle": 0,
               "id": "fd4e7285-974e-46b9-ab24-51c9acb321d6",
@@ -143,6 +143,10 @@
                 {
                   "x": 292,
                   "y": 122
+                },
+                {
+                  "x": 331,
+                  "y": 144
                 }
               ],
               "id": "80275cb6-7dd4-4db2-a334-35ea3f0ee7c8",
@@ -161,6 +165,7 @@
               "z": 4,
               "hasOpenThreats": false,
               "protocol": "Standard NMEA",
+              "outOfScope": false,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -373,7 +378,7 @@
                   "title": "Bribed Manager access to Google Cloud",
                   "type": "Elevation of privilege",
                   "description": "Someone could give access details to the Google Cloud Platform which would give a user access to all systems, accessing all data and changing applications",
-                  "mitigation": "Users of Systems are security vetted to ensure a level of trust from staff"
+                  "mitigation": "Users of Systems are security vetted to ensure a level of trust from staff.\n\nTrain staff to guard against social engineering attempts; regularly monitor assets for suspicious behaviour."
                 },
                 {
                   "status": "Mitigated",
@@ -382,6 +387,14 @@
                   "type": "Elevation of privilege",
                   "description": "Hackers could try different user names and passwords to gain access to google cloud platform",
                   "mitigation": "Ensure strong passwords are used.\nSetup two factor authentication"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Denial of Service Attack",
+                  "type": "Denial of service",
+                  "description": "Users could perform a Denial of Service Attack",
+                  "mitigation": "With this being within Google Cloud which caters for DOS attacks.  Ensure this protection has been activated"
                 }
               ],
               "attrs": {
