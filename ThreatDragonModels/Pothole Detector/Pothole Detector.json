@@ -34,7 +34,7 @@
                   "type": "Tampering",
                   "title": "Physically removing sensor",
                   "description": "It is possible to disconnect the GPS from the Particle Device",
-                  "mitigation": "Ensure that GPS sensor is secure and within an area in the car that is not easily accessible.   \nTampering one with sensor will only result in data not being transferred.  Also with all cars on the road with sensors, loss of this data from one device is miniscule."
+                  "mitigation": "Ensure that GPS sensor is secure and within an area of the car that is not easily accessible.   \nTampering with sensor will only result in data not being transferred.  Also with all cars on the road with sensors, loss of this data from one device is miniscule."
                 }
               ],
               "attrs": {
@@ -70,7 +70,7 @@
                   "title": "Physically removing sensor",
                   "type": "Tampering",
                   "description": "The accelerometer sensor could be physically removed from the car.",
-                  "mitigation": "Ensure the accelerometer sensor is secure with the car and not easily accessible.  \n\nTampering one with sensor will only result in data not being transferred, there will be more than one sensor on each car.  Also with all cars on the road with sensors, loss of this data from one device is miniscule."
+                  "mitigation": "Ensure the accelerometer sensor is secure within the car and not easily accessible.  \n\nTampering one with sensor will only result in data not being transferred, there will be more than one sensor on each car.  Also with all cars on the road with sensors, loss of this data from one device is miniscule."
                 }
               ],
               "attrs": {
@@ -102,7 +102,7 @@
               "threats": [
                 {
                   "status": "Mitigated",
-                  "severity": "Low",
+                  "severity": "Medium",
                   "title": "Physical access to USB on Particle device",
                   "type": "Tampering",
                   "description": "Someone could physically attach a USB to the particle device and modify the filmware.",
@@ -253,7 +253,7 @@
                   "type": "Tampering",
                   "title": "Access to Wifi Router",
                   "description": "An attacker could gain access to Wifi Router and making the internet unavailable.",
-                  "mitigation": "Strong Administrator passwords setup on the router"
+                  "mitigation": "Strong Administrator passwords setup on the router\nEnsure that default Administrator Passwords are changed."
                 }
               ],
               "attrs": {
@@ -380,7 +380,7 @@
               "threats": [
                 {
                   "status": "Mitigated",
-                  "severity": "Low",
+                  "severity": "High",
                   "title": "Bribed Manager access to Google Cloud",
                   "type": "Elevation of privilege",
                   "description": "Someone could give access details to the Google Cloud Platform which would give a user access to all systems, accessing all data and changing applications",
@@ -497,7 +497,7 @@
               "angle": 0,
               "id": "98bd63ee-1ec4-4a6a-9e4c-a0af989a0c02",
               "z": 14,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "status": "Mitigated",
@@ -505,10 +505,10 @@
                   "type": "Repudiation",
                   "description": "Staff directly gaining access to database and modifying database records",
                   "title": "Staff accessing and modifying database records",
-                  "mitigation": "Ensure staff are securely vetted."
+                  "mitigation": "Ensure staff are securely vetted.\nSetup User based accounts access with strong passwords for each user\nMonitor and view user activiity"
                 },
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "title": "An attacker gains access to the database to view data",
@@ -518,13 +518,13 @@
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "SQL Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
