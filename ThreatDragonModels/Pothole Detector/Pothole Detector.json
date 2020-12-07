@@ -577,12 +577,12 @@
               "angle": 0,
               "id": "2f587d4d-80f5-4e15-bb8d-4902863646df",
               "z": 16,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": true,
               "threats": [
                 {
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Information disclosure",
                   "title": "An attacker has access to all logs",
                   "description": "A user has access to all logs which contain information on the data being inserted to the database.",
@@ -591,13 +591,13 @@
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Logs"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
