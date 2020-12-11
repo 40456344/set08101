@@ -19,8 +19,8 @@
                 "height": 80
               },
               "position": {
-                "x": 53,
-                "y": 53
+                "x": 774,
+                "y": 12
               },
               "angle": 0,
               "id": "722832d4-3fcd-4a9d-ba32-794ae46c5af1",
@@ -45,13 +45,23 @@
                 "height": 80
               },
               "position": {
-                "x": 39,
-                "y": 494
+                "x": 37,
+                "y": 499
               },
               "angle": 0,
               "id": "130b6dec-c9b9-45f2-bc8b-677d99e93bb2",
               "z": 2,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "title": "Could physically remove the device",
+                  "description": "Someone could remove the GPS device",
+                  "mitigation": "The GPS device is stored in a secure place which is not easily accessible"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -97,8 +107,8 @@
                 "height": 80
               },
               "position": {
-                "x": 430,
-                "y": 180
+                "x": 431,
+                "y": 179
               },
               "angle": 0,
               "id": "2633e77a-270e-4678-98b9-860fb8b89320",
@@ -149,8 +159,8 @@
                 "height": 80
               },
               "position": {
-                "x": 506,
-                "y": 297
+                "x": 691,
+                "y": 381
               },
               "angle": 0,
               "id": "03ee795e-bb33-4004-a8ea-a7ada730b6db",
@@ -185,6 +195,10 @@
                   "y": 458
                 },
                 {
+                  "x": 114,
+                  "y": 424
+                },
+                {
                   "x": 122,
                   "y": 395
                 }
@@ -207,6 +221,9 @@
               ],
               "z": 7,
               "hasOpenThreats": false,
+              "protocol": "TCP",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -263,11 +280,65 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 685,
+                "y": 3
+              },
+              "target": {
+                "x": 981,
+                "y": 170
+              },
+              "vertices": [
+                {
+                  "x": 630,
+                  "y": 154
+                },
+                {
+                  "x": 813,
+                  "y": 28
+                }
+              ],
+              "id": "e08a6e59-6f42-455c-b397-f48473a9ee5f",
+              "z": 9,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 30,
+                "y": 20
+              },
+              "target": {
+                "x": 110,
+                "y": 100
+              },
+              "vertices": [
+                {
+                  "x": 74,
+                  "y": 72
+                },
+                {
+                  "x": 1502,
+                  "y": 1230
+                },
+                {
+                  "x": 543,
+                  "y": 445
+                }
+              ],
+              "id": "dc075bbb-e075-4f58-bb56-df5f1df305b4",
+              "z": 10,
+              "attrs": {}
             }
           ]
         },
         "size": {
-          "height": 590,
+          "height": 1239,
           "width": 2199
         }
       }
